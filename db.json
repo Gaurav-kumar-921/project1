@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "productName": "Apple",
+      "category": "fruits",
+      "freshness": "Second Hand",
+      "price": 500,
+      "comment": "gvbnvgbcbvbcvbv ",
+      "date": "2022-06-15T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Apple",
+      "category": "electronics",
+      "freshness": "Brand New",
+      "price": 5000,
+      "comment": "ko",
+      "date": "2022-06-14T18:30:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
