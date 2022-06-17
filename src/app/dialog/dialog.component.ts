@@ -62,7 +62,7 @@ export class DialogComponent implements OnInit {
       category: ['', Validators.required],
       freshness: ['', Validators.required],
       price: ['', Validators.required],
-      // comment: ['', Validators.required],
+      comment: [''],
       date: ['', Validators.required],
     })
     // console.log(this.editData);
