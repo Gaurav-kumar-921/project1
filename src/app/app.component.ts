@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { ApiService } from './services/api.service';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +14,13 @@ import { ApiService } from './services/api.service';
 export class AppComponent implements OnInit {
   title = 'project1';
 
+  displayedColumns: string[] = ['productName', 'category', 'freshness', 'price', 'comment', 'date', 'action'];
+  dataSource!: MatTableDataSource<any>;
+
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
+
+
   constructor(private dialog: MatDialog, private api: ApiService) {
 
   }
@@ -18,10 +28,24 @@ export class AppComponent implements OnInit {
     this.getAllProducts();
   }
 
+  openDialog() {
+    this.dialog.open(DialogComponent, {
+      width: '100%'
+    }).afterClosed().subscribe(val => {
+      if (val === 'save') {
+        this.getAllProducts();
+      }
+    })
+  }
+
   getAllProducts() {
     this.api.getProduct().subscribe({
       next: (res) => {
-        console.log(res);
+        // console.log(res);
+        this.dataSource = new MatTableDataSource(res);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+
       },
       error: (err) => {
         alert('Some Error Occured while getting all products')
@@ -29,9 +53,38 @@ export class AppComponent implements OnInit {
     })
   }
 
-  openDialog() {
-    this.dialog.open(DialogComponent, {
-      width: '100%'
-    });
+  deleteProduct(id: number) {
+    this.api.deleteProduct(id).subscribe({
+      next: (res) => {
+        alert('deleted product successfully')
+        this.getAllProducts();
+      },
+      error: (err) => {
+        alert('Some Error Occured while deleting product')
+      }
+    })
   }
+
+  editProduct(row: any) {
+    this.dialog.open(DialogComponent, {
+      width: '30%',
+      data: row
+    }).afterClosed().subscribe(val => {
+      if (val === 'update') {
+        this.getAllProducts();
+      }
+    })
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+
+
 }

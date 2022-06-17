@@ -1,22 +1,73 @@
 {
   "productList": [
     {
-      "productName": "Apple",
-      "category": "fruits",
-      "freshness": "Second Hand",
-      "price": 500,
-      "comment": "gvbnvgbcbvbcvbv ",
-      "date": "2022-06-15T18:30:00.000Z",
+      "productName": "iPhone",
+      "category": "electronics",
+      "freshness": "Brand New",
+      "price": 15000,
+      "date": "2022-06-14T18:30:00.000Z",
       "id": 1
     },
     {
       "productName": "Apple",
-      "category": "electronics",
+      "category": "fruits",
       "freshness": "Brand New",
-      "price": 5000,
-      "comment": "ko",
-      "date": "2022-06-14T18:30:00.000Z",
+      "price": 100,
+      "comment": "Fresh Apples Buy Now",
+      "date": "2022-06-15T18:30:00.000Z",
       "id": 2
+    },
+    {
+      "productName": "Audi",
+      "category": "electronics",
+      "freshness": "Second Hand",
+      "price": 8000,
+      "comment": "Hurry up Buy it Now!!!",
+      "date": "2022-06-08T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "Face wash",
+      "category": "cosmetics",
+      "freshness": "Brand New",
+      "price": 200,
+      "comment": "scsckndjdddjcsnskckj",
+      "date": "2022-06-15T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "scskcnxjncjnjccjz",
+      "category": "electronics",
+      "freshness": "Second Hand",
+      "price": 12344,
+      "comment": "scsnicnckdcncj",
+      "date": "2022-06-08T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "cnscnsscnsjncjdsd",
+      "category": "fruits",
+      "freshness": "Brand New",
+      "price": 3456,
+      "comment": "cnsecnxxsdvncjkvnj",
+      "date": "2022-06-15T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "dffbvnbfbbf",
+      "category": "cosmetics",
+      "freshness": "Refurbished",
+      "price": 2586,
+      "date": "2022-06-07T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "productName": "feskmscmscks",
+      "category": "vegitables",
+      "freshness": "Refurbished",
+      "price": 463,
+      "date": "2022-06-06T18:30:00.000Z",
+      "id": 8
     }
   ],
   "comments": [
