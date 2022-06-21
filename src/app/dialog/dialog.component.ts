@@ -21,6 +21,7 @@ export class DialogComponent implements OnInit {
   addProduct() {
     if (!this.editData) {
       if (this.productForm.valid) {
+        console.log(this.productForm.value);
         this.api.postProduct(this.productForm.value).subscribe({
           next: (res) => {
             alert("Product added successfully")
@@ -63,8 +64,10 @@ export class DialogComponent implements OnInit {
       freshness: ['', Validators.required],
       price: ['', Validators.required],
       comment: [''],
+      file: [''],
       date: ['', Validators.required],
     })
+
     // console.log(this.editData);
     if (this.editData) {
       this.actionBtn = "Update";
@@ -73,7 +76,30 @@ export class DialogComponent implements OnInit {
       this.productForm.controls['freshness'].setValue(this.editData.freshness);
       this.productForm.controls['price'].setValue(this.editData.price);
       this.productForm.controls['comment'].setValue(this.editData.comment);
+      this.productForm.controls['file'].setValue(this.editData.file);
       this.productForm.controls['date'].setValue(this.editData.date);
+    }
+  }
+
+  // imageUrl: string = "../assets/img/img1.png"
+
+  //   onSelectedFile(event){
+  // if(event.target.files.length > 0){
+  //   const file = event.target.files[0];
+  //   this.productForm.get('image').setValue(file);
+  // }
+  //}
+
+  url = "C:\Users\admin\Desktop\Angular\Angular CRUD\src\assets\img\img1.png";
+
+
+  onSelectFile(e: any) {
+    if (e.target.files) {
+      var reader = new FileReader();
+      reader.readAsDataURL(e.target.files[0]);
+      reader.onload = (event: any) => {
+        this.url = event.target.result;
+      }
     }
   }
 

@@ -1,22 +1,14 @@
 {
   "productList": [
     {
-      "productName": "iPhone",
+      "productName": "IPhone x",
       "category": "electronics",
       "freshness": "Brand New",
       "price": 15000,
-      "comment": "yoooooooooo bro\n",
+      "comment": "Good product",
       "date": "2022-06-14T18:30:00.000Z",
+      "file": "C:\\fakepath\\Screenshot (1).png",
       "id": 1
-    },
-    {
-      "productName": "Apple",
-      "category": "fruits",
-      "freshness": "Second Hand",
-      "price": 100,
-      "comment": "jdcxbngbhjdvcxbnbhjerdgch",
-      "date": "2022-06-13T18:30:00.000Z",
-      "id": 2
     },
     {
       "productName": "Audi",
@@ -25,6 +17,7 @@
       "price": 8000,
       "comment": "rtgfvbtgfbvbfv ",
       "date": "2022-06-13T18:30:00.000Z",
+      "file": "C:\\fakepath\\download.jpg",
       "id": 3
     },
     {
@@ -33,6 +26,7 @@
       "freshness": "Second Hand",
       "price": 12344,
       "comment": "jhgjdvcb hgdcvjdfvbhb ",
+      "file": "C:\\fakepath\\download.jpg",
       "date": "2022-06-15T18:30:00.000Z",
       "id": 5
     },
@@ -42,40 +36,117 @@
       "freshness": "Brand New",
       "price": 3456,
       "comment": "cnsecnxxsdvncjkvnj",
+      "file": "C:\\fakepath\\download.jpg",
       "date": "2022-06-15T18:30:00.000Z",
       "id": 6
     },
     {
-      "productName": "dffbvnbfbbf",
-      "category": "cosmetics",
-      "freshness": "Refurbished",
-      "price": 2586,
-      "date": "2022-06-07T18:30:00.000Z",
-      "id": 7
+      "productName": "battery",
+      "category": "electronics",
+      "freshness": "Brand New",
+      "price": 500,
+      "comment": "brand new",
+      "date": "2022-06-01T18:30:00.000Z",
+      "id": 11
     },
     {
-      "productName": "feskmscmscks",
+      "productName": "dcxvfc ",
       "category": "vegitables",
+      "freshness": "Second Hand",
+      "price": 5654,
+      "comment": "uysdfcbghejdshcjx",
+      "date": "2022-06-21T18:30:00.000Z",
+      "file": "C:\\fakepath\\Screenshot (1).png",
+      "id": 12
+    },
+    {
+      "productName": "dvvfbvfbdvbdv",
+      "category": "vegitables",
+      "freshness": "Brand New",
+      "price": 234,
+      "comment": "ghgddsdcdvfbf",
+      "date": "2022-06-09T18:30:00.000Z",
+      "id": 13
+    },
+    {
+      "productName": "svdskdsjcdbdsjk",
+      "category": "electronics",
       "freshness": "Refurbished",
-      "price": 463,
-      "date": "2022-06-06T18:30:00.000Z",
-      "id": 8
+      "price": 569,
+      "comment": "scdfdvdvcscsd",
+      "file": "",
+      "date": "2022-06-09T18:30:00.000Z",
+      "id": 14
+    },
+    {
+      "productName": "csjcsdnsjkd",
+      "category": "vegitables",
+      "freshness": "Second Hand",
+      "price": 234,
+      "comment": "ssbiscbkcdsbcj",
+      "file": "C:\\fakepath\\download.jpg",
+      "date": "2022-06-09T18:30:00.000Z",
+      "id": 15
+    },
+    {
+      "productName": "cjscndsckjcn",
+      "category": "cosmetics",
+      "freshness": "Brand New",
+      "price": 234,
+      "comment": "sjndk nxk",
+      "file": "C:\\fakepath\\download.jpg",
+      "date": "2022-06-09T18:30:00.000Z",
+      "id": 16
+    },
+    {
+      "productName": "fdvd dfv c",
+      "category": "cosmetics",
+      "freshness": "Second Hand",
+      "price": 457,
+      "comment": "dvdvfbvdfdf",
+      "file": "C:\\fakepath\\download.jpg",
+      "date": "2022-06-03T18:30:00.000Z",
+      "id": 17
     },
     {
       "productName": "Nokia",
       "category": "electronics",
       "freshness": "Brand New",
-      "price": 1250,
-      "date": "2022-06-20T18:30:00.000Z",
-      "id": 9
+      "price": 1500,
+      "comment": "this is a good deal",
+      "file": "C:\\fakepath\\img1.png",
+      "date": "2022-06-07T18:30:00.000Z",
+      "id": 18
     },
     {
-      "productName": "Mobile Samsung",
-      "category": "vegitables",
+      "productName": "scscsdncdsjkcnd",
+      "category": "electronics",
+      "freshness": "Refurbished",
+      "price": 500,
+      "comment": "ncskcsdckj",
+      "file": "C:\\fakepath\\img1.png",
+      "date": "2022-06-02T18:30:00.000Z",
+      "id": 19
+    },
+    {
+      "productName": "Watch",
+      "category": "electronics",
       "freshness": "Brand New",
-      "price": 48000,
-      "date": "2022-06-21T18:30:00.000Z",
-      "id": 10
+      "price": 200,
+      "comment": "BOAT Bass Heads",
+      "file": "C:\\fakepath\\img1.png",
+      "date": "2022-06-08T18:30:00.000Z",
+      "id": 20
+    },
+    {
+      "productName": "Test123",
+      "category": "electronics",
+      "freshness": "Brand New",
+      "price": 2314,
+      "comment": "",
+      "file": "",
+      "date": "2022-06-24T18:30:00.000Z",
+      "id": 21
     }
   ],
   "comments": [

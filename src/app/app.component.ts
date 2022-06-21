@@ -28,6 +28,18 @@ export class AppComponent implements OnInit {
     this.getAllProducts();
   }
 
+  url = "";
+
+  // onSelectFile(e: any) {
+  //   if (e.target.files) {
+  //     var reader = new FileReader();
+  //     reader.readAsDataURL(e.target.files[0]);
+  //     reader.onload = (event: any) => {
+  //       this.url = event.target.result;
+  //     }
+  //   }
+  // }
+
   openDialog() {
     this.dialog.open(DialogComponent, {
       width: '100%'
@@ -43,6 +55,7 @@ export class AppComponent implements OnInit {
       next: (res) => {
         // console.log(res);
         this.dataSource = new MatTableDataSource(res);
+        console.log(this.dataSource);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
 

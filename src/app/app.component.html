@@ -18,42 +18,52 @@
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
 
-        <!-- ID Column -->
+        <!-- ProductName Column -->
         <ng-container matColumnDef="productName">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> productName </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> ProductName </th>
           <td mat-cell *matCellDef="let row"> {{row.productName}} </td>
         </ng-container>
 
-        <!-- Progress Column -->
+        <!-- Category Column -->
         <ng-container matColumnDef="category">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> category </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
           <td mat-cell *matCellDef="let row"> {{row.category}}</td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- Freshness Column -->
         <ng-container matColumnDef="freshness">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> freshness </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Freshness </th>
           <td mat-cell *matCellDef="let row"> {{row.freshness}} </td>
         </ng-container>
 
-        <!-- Fruit Column -->
+        <!-- Price Column -->
         <ng-container matColumnDef="price">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> price </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
           <td mat-cell *matCellDef="let row"> {{row.price | currency}} </td>
         </ng-container>
 
-        <!-- Fruit Column -->
+        <!-- Comment Column -->
         <ng-container matColumnDef="comment">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> comment </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Comment </th>
           <td mat-cell *matCellDef="let row"> {{row.comment}} </td>
         </ng-container>
-        <!-- Fruit Column -->
+
+        <!-- file Column -->
+        <ng-container matColumnDef="file">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> File</th>
+          <td mat-cell *matCellDef="let row"><img [src]="url" height="50px" alt="">
+           </td>
+        </ng-container>
+
+        <!-- Date Column -->
         <ng-container matColumnDef="date">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> date </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
           <td mat-cell *matCellDef="let row"> {{row.date | date}} </td>
         </ng-container>
+
+        <!-- Action Column -->
         <ng-container matColumnDef="action">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> action </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
           <td mat-cell *matCellDef="let row">
             <button mat-icon-button (click)="editProduct(row)" color="primary">
               <mat-icon>edit</mat-icon>
@@ -75,6 +85,7 @@
 
       <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
     </div>
+
 
   </div>
 </div>
